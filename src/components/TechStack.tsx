@@ -76,7 +76,7 @@ export default function TechStack() {
                 <span className="font-sans text-[15px] font-bold">{category.name}</span>
               </div>
 
-              <div className="p-3">
+              <div className="p-3!">
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
