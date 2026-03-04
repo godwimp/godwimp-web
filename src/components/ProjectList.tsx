@@ -23,7 +23,7 @@ export default async function ProjectList() {
 
   return (
     <section id="projects" className="py-10! border-t border-border">
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 48px' }}>
+      <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '0 48px' }}>
         <div className="flex items-baseline gap-4 mb-10!">
           <span className="text-xs text-accent tracking-[0.1em]">01</span>
           <h2 className="font-sans text-4xl font-bold tracking-tight">Projects</h2>

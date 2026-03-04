@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import ProjectCard from "@/components/ProjectCard";
 import ProjectList from "@/components/ProjectList";
 import TechStack from "@/components/TechStack";
 
@@ -14,8 +13,8 @@ export default function Home() {
       <TechStack />
       <About />
 
-      <footer className="py-10 border-t border-border">
-        <div style={{ maxWidth: '1024px', margin: '0 auto', padding: '0 48px' }}
+      <footer className="py-10! border-t border-border">
+        <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '0 48px' }}
           className="flex items-center justify-between">
           <span className="text-[13px] text-muted">
             godwimp.me · available for freelance & full-time

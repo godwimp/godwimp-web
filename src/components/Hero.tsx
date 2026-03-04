@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute top-[20%] right-[10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(0,255,136,0.06)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="relative z-10 w-full">
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 48px', paddingTop: '96px' }}>
+        <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '0 48px', paddingTop: '96px' }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

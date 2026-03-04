@@ -2,42 +2,62 @@
 
 import { motion } from 'framer-motion';
 
-export default function TechStack() {
-  const stackCategories = [
-    {
-      icon: '⚙️',
-      name: 'Backend & Frameworks',
-      items: [
-        { icon: '🟥', name: 'NestJS', note: 'Main framework', usage: 'Production services', level: 5 },
-        { icon: '🟩', name: 'Node.js', note: 'Express · Fastify', usage: 'REST & GraphQL APIs', level: 5 },
-        { icon: '📘', name: 'TypeScript', note: 'Strict mode', usage: 'All projects', level: 5 },
-      ],
-    },
-    {
-      icon: '🗄️',
-      name: 'Databases & Storage',
-      items: [
-        { icon: '🐘', name: 'PostgreSQL', note: 'Primary relational DB', usage: 'Complex queries & transactions', level: 5 },
-        { icon: '⚡', name: 'Redis', note: 'Cache · queue · pub-sub', usage: 'BullMQ · sessions', level: 4 },
-        { icon: '🍃', name: 'MongoDB', note: 'Document store', usage: 'Logs & flexible schemas', level: 3 },
-      ],
-    },
-    {
-      icon: '☁️',
-      name: 'Infrastructure & DevOps',
-      items: [
-        { icon: '🐳', name: 'Docker', note: 'Containers', usage: 'All deployments', level: 4 },
-        { icon: '📨', name: 'Message Queues', note: 'BullMQ · RabbitMQ', usage: 'Async processing', level: 4 },
-        { icon: '🔒', name: 'Security', note: 'JWT · OAuth · Helmet', usage: 'Auth & protection', level: 5 },
-      ],
-    },
-  ];
+interface StackItem {
+  icon: string;
+  name: string;
+  note: string;
+  usage: string;
+  level: number;
+}
 
+interface StackCategory {
+  icon: string;
+  name: string;
+  items: StackItem[];
+}
+
+const stackCategories: StackCategory[] = [
+  {
+    icon: '💻',
+    name: 'Languages',
+    items: [
+      { icon: '📘', name: 'TypeScript', note: 'Strict mode', usage: 'All projects', level: 5 },
+      { icon: '🟨', name: 'JavaScript', note: 'Node.js · Browser', usage: 'APIs & frontends', level: 5 },
+      { icon: '�', name: 'PHP', note: 'Laravel apps', usage: 'Web applications', level: 4 },
+      { icon: '🗃️', name: 'SQL', note: 'PostgreSQL · MySQL · Oracle', usage: 'Complex queries', level: 4 },
+      { icon: '🐍', name: 'Python', note: 'Scripting', usage: 'Automation & tools', level: 3 },
+    ],
+  },
+  {
+    icon: '⚙️',
+    name: 'Frameworks & Libraries',
+    items: [
+      { icon: '🟥', name: 'NestJS', note: 'Main framework', usage: 'Production services', level: 5 },
+      { icon: '🔺', name: 'Laravel', note: 'PHP framework', usage: 'Full-stack web apps', level: 4 },
+      { icon: '🚀', name: 'Express.js', note: 'REST APIs', usage: 'Lightweight services', level: 4 },
+      { icon: '⚛️', name: 'React.js', note: 'Inertia.js · Next.js', usage: 'Frontend UIs', level: 3 },
+      { icon: '📨', name: 'BullMQ', note: 'Job queues', usage: 'Async processing', level: 4 },
+    ],
+  },
+  {
+    icon: '🗄️',
+    name: 'Databases & Tools',
+    items: [
+      { icon: '🐘', name: 'PostgreSQL', note: 'PostGIS · Prisma', usage: 'Primary DB · geospatial', level: 5 },
+      { icon: '🐬', name: 'MySQL / Oracle', note: 'TypeORM · Sequelize', usage: 'Relational workloads', level: 4 },
+      { icon: '⚡', name: 'Redis', note: 'Cache · pub-sub', usage: 'Sessions & queues', level: 4 },
+      { icon: '🐳', name: 'Docker · VPS', note: 'Containers · Linux', usage: 'Deployments & servers', level: 4 },
+      { icon: '📄', name: 'Git · Swagger', note: 'GitHub · GitLab · OpenAPI', usage: 'VCS & API docs', level: 5 },
+    ],
+  },
+];
+
+export default function TechStack() {
   return (
     <section id="stack" className="py-10! border-t border-border">
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 48px' }}>
+      <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '0 48px' }}>
         <div className="flex items-baseline gap-4 mb-10!">
-          <span className="text-xs text-accent tracking-[0.1em]">02</span>
+          <span className="text-xs text-accent tracking-widest">02</span>
           <h2 className="font-sans text-4xl font-bold tracking-tight">Tech Stack</h2>
         </div>
 
@@ -69,7 +89,7 @@ export default function TechStack() {
                         <div className="text-[11px] text-muted">{item.note}</div>
                       </div>
                     </div>
-                    <div className="text-right max-w-[120px]">
+                    <div className="text-right max-w-30">
                       <div className="text-[11px] text-accent leading-[1.4]">{item.usage}</div>
                       <div className="flex gap-0.5 mt-1 justify-end">
                         {[...Array(5)].map((_, i) => (
