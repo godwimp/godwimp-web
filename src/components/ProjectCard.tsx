@@ -28,7 +28,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -4 }}
-      className="group relative flex flex-col bg-surface border border-border rounded-xl p-6 transition-all duration-300 hover:border-accent/20 overflow-hidden"
+      className="group relative flex flex-col bg-surface border border-border rounded-xl p-6! transition-all duration-300 hover:border-accent/20 overflow-hidden"
     >
       <div className="absolute inset-0 bg-linear-to-br from-white/2 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
