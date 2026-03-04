@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
@@ -9,17 +8,6 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <div className="w-full min-h-screen overflow-x-hidden">
-=======
-import Nav from '@/components/Nav';
-import Hero from '@/components/Hero';
-import ProjectList from '@/components/ProjectList';
-import TechStack from '@/components/TechStack';
-import About from '@/components/About';
-
-export default function Home() {
-  return (
-    <div className="min-h-screen overflow-x-hidden">
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
       <Nav />
       <Hero />
       <ProjectList />

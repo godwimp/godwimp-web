@@ -8,7 +8,6 @@ export default async function ProjectList() {
 
   try {
     const response = await fetchAPI('/projects');
-<<<<<<< HEAD
     // Validasi response agar selalu array
     if (Array.isArray(response)) {
       projects = response;
@@ -19,9 +18,6 @@ export default async function ProjectList() {
     } else {
       projects = [];
     }
-=======
-    projects = response.data || [];
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
   } catch (err) {
     error = err instanceof Error ? err.message : 'Failed to fetch projects';
     console.error('Error fetching projects:', err);

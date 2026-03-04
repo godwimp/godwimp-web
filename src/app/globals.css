@@ -9,11 +9,8 @@
   --accent3: #ff6b35;
   --text: #e8e8f0;
   --muted: #5a5a7a;
-<<<<<<< HEAD
   --font-sans: "IBM Plex Mono", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
-=======
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
 }
 
 @theme inline {

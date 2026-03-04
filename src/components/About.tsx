@@ -47,22 +47,14 @@ export default function About() {
             <div>
               <div className="text-[11px] text-accent2 tracking-[0.1em] uppercase mb-2">Email</div>
               <a
-<<<<<<< HEAD
                 href="mailto:fadhiel@godwimp.me"
                 className="text-[14px] text-text hover:text-accent transition-colors"
               >
                 fadhiel@godwimp.me
-=======
-                href="mailto:hi@godwimp.me"
-                className="text-[14px] text-text hover:text-accent transition-colors"
-              >
-                hi@godwimp.me
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
               </a>
             </div>
 
             <div>
-<<<<<<< HEAD
               <div className="text-[11px] text-accent2 tracking-[0.1em] uppercase mb-2 flex items-center gap-2">
                 Work Email
                 <span className="text-[10px] bg-accent/10 text-accent border border-accent/20 px-1.5 py-0.5 rounded-md tracking-normal normal-case">
@@ -75,35 +67,6 @@ export default function About() {
               >
                 work@godwimp.me
               </a>
-=======
-              <div className="text-[11px] text-accent2 tracking-[0.1em] uppercase mb-2">Links</div>
-              <div className="flex flex-col gap-2">
-                <a
-                  href="https://github.com/godwimp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[14px] text-text hover:text-accent transition-colors"
-                >
-                  GitHub →
-                </a>
-                <a
-                  href="https://www.npmjs.com/~godwimp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[14px] text-text hover:text-accent transition-colors"
-                >
-                  NPM Packages →
-                </a>
-                <a
-                  href="https://linkedin.com/in/fadhillahmaulana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[14px] text-text hover:text-accent transition-colors"
-                >
-                  LinkedIn →
-                </a>
-              </div>
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
             </div>
 
             <div className="pt-4 border-t border-border">

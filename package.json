@@ -18,13 +18,9 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@tailwindcss/postcss": "^4.2.1",
-=======
     "@fontsource/ibm-plex-mono": "^5.2.7",
     "@fontsource/syne": "^5.2.7",
     "@tailwindcss/postcss": "^4",
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
