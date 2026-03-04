@@ -39,7 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+<<<<<<< HEAD
 
 # Planning
 ARCHITECTURE.md
 MASTERPLAN.md
+=======
+.env
+>>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
