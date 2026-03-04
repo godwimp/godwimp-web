@@ -17,8 +17,4 @@ export interface ApiResponse<T> {
   data?: T;
   error?: string;
   message?: string;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6dade488c8b37cd1f5ca7e86b54a6d8a9b1790ad
