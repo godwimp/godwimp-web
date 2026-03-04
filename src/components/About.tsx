@@ -7,17 +7,17 @@ export default function About() {
     <section id="about" className="py-10! border-t border-border">
       <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '0 48px' }}>
         <div className="flex items-baseline gap-4 mb-10!">
-          <span className="text-xs text-accent tracking-[0.1em]">03</span>
+          <span className="text-xs text-accent tracking-widest">03</span>
           <h2 className="font-sans text-4xl font-bold tracking-tight">About & Contact</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-surface border border-border rounded-xl p-7"
+            className="bg-surface border border-border rounded-xl p-7!"
           >
             <h3 className="font-sans text-xl font-bold mb-4">Who I Am</h3>
             <div className="text-[14px] text-muted leading-[1.8] space-y-3">
@@ -41,12 +41,12 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-surface border border-border rounded-xl p-7"
+            className="bg-surface border border-border rounded-xl p-7!"
           >
             <h3 className="font-sans text-xl font-bold mb-4">Get in Touch</h3>
             <div className="space-y-4">
               <div>
-                <div className="text-[11px] text-accent2 tracking-[0.1em] uppercase mb-2">Email</div>
+                <div className="text-[11px] text-accent2 tracking-widest uppercase mb-2">Email</div>
                 <a
                   href="mailto:fadhiel@godwimp.me"
                   className="text-[14px] text-text hover:text-accent transition-colors"
@@ -56,7 +56,7 @@ export default function About() {
               </div>
 
               <div>
-                <div className="text-[11px] text-accent2 tracking-[0.1em] uppercase mb-2 flex items-center gap-2">
+                <div className="text-[11px] text-accent2 tracking-widest uppercase mb-2">
                   Work Email
                 </div>
                 <a

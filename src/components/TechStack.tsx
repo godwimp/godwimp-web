@@ -23,7 +23,7 @@ const stackCategories: StackCategory[] = [
     items: [
       { icon: '📘', name: 'TypeScript', note: 'Strict mode', usage: 'All projects', level: 5 },
       { icon: '🟨', name: 'JavaScript', note: 'Node.js · Browser', usage: 'APIs & frontends', level: 5 },
-      { icon: '�', name: 'PHP', note: 'Laravel apps', usage: 'Web applications', level: 4 },
+      { icon: '🐘', name: 'PHP', note: 'Laravel apps', usage: 'Web applications', level: 4 },
       { icon: '🗃️', name: 'SQL', note: 'PostgreSQL · MySQL · Oracle', usage: 'Complex queries', level: 4 },
       { icon: '🐍', name: 'Python', note: 'Scripting', usage: 'Automation & tools', level: 3 },
     ],
