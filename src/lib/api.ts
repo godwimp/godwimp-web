@@ -1,11 +1,11 @@
 async function fetchAPI(endpoint: string, options?: RequestInit) {
-  const baseURL = process.env.API_URL || 'http://localhost:3000';
+  const baseURL = process.env.API_URL || "http://localhost:3000";
   const url = `${baseURL}${endpoint}`;
 
   try {
     const response = await fetch(url, {
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
         ...options?.headers,
       },
       ...options,
@@ -15,9 +15,11 @@ async function fetchAPI(endpoint: string, options?: RequestInit) {
       throw new Error(`API Error: ${response.status}`);
     }
 
-    return await response.json();
+    const json = await response.json();
+
+    return json.data;
   } catch (error) {
-    console.error('Fetch error:', error);
+    console.error("Fetch error:", error);
     throw error;
   }
 }
