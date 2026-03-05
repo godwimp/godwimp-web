@@ -49,18 +49,18 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       </div>
 
       {/* Title */}
-      <h3 className="font-sans text-xl font-bold mb-2 text-text leading-snug group-hover:text-accent transition-colors duration-200">
+      <h3 className="font-mono text-xl font-bold text-text leading-snug group-hover:text-accent transition-colors duration-200">
         {project.title}
       </h3>
 
       {/* Description */}
-      <p className="text-[13px] text-muted leading-relaxed mb-5">
+      <p className="text-[13px] mt-3! text-muted leading-relaxed mb-5">
         {project.description}
       </p>
 
       {/* Highlights */}
       {project.highlights && project.highlights.length > 0 && (
-        <div className="mb-5 space-y-2">
+        <div className="my-3! space-y-2">
           <p className="text-[10px] font-semibold tracking-widest uppercase text-muted">Highlights</p>
           <ul className="space-y-1.5">
             {project.highlights.map((highlight, i) => (
@@ -79,7 +79,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       {project.techStack && project.techStack.length > 0 && (
         <div className="flex flex-wrap gap-1.5 mb-4">
           {project.techStack.map((tech, i) => (
-            <span key={i} className="text-[11px] px-2.5 py-0.5 rounded-md bg-surface text-muted border border-border font-mono tracking-tight">
+            <span key={i} className="text-[11px] my-1.5! px-2.5 py-0.5 rounded-md bg-surface text-muted border border-border font-mono tracking-tight">
               {tech}
             </span>
           ))}
@@ -89,20 +89,20 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       {/* Links */}
       <div className="flex gap-3 pt-4 border-t border-border">
         {project.githubUrl && (
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[12px] text-muted hover:text-text transition-colors duration-200 font-medium">
-            <Github size={13} />
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} on GitHub`} className="flex items-center gap-1.5 text-[12px] text-muted hover:text-text transition-colors duration-200 font-medium">
+            <Github size={13} aria-hidden="true" />
             GitHub
           </a>
         )}
         {project.npmUrl && (
-          <a href={project.npmUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[12px] text-muted hover:text-accent transition-colors duration-200 font-medium">
-            <Package size={13} />
+          <a href={project.npmUrl} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} on NPM`} className="flex items-center gap-1.5 text-[12px] text-muted hover:text-accent transition-colors duration-200 font-medium">
+            <Package size={13} aria-hidden="true" />
             NPM
           </a>
         )}
         {project.liveUrl && (
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-[12px] text-muted hover:text-accent transition-colors duration-200 font-medium">
-            <ExternalLink size={13} />
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} live demo`} className="flex items-center gap-1.5 text-[12px] text-muted hover:text-accent transition-colors duration-200 font-medium">
+            <ExternalLink size={13} aria-hidden="true" />
             Live Demo
           </a>
         )}

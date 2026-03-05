@@ -73,7 +73,7 @@ export default function TechStack() {
             >
               <div className="px-5 py-4 border-b border-border flex items-center gap-2.5">
                 <span className="text-lg">{category.icon}</span>
-                <span className="font-sans text-[15px] font-bold">{category.name}</span>
+                <span className="font-mono text-[15px] font-bold">{category.name}</span>
               </div>
 
               <div className="p-3!">
@@ -91,7 +91,7 @@ export default function TechStack() {
                     </div>
                     <div className="text-right max-w-30">
                       <div className="text-[11px] text-accent leading-[1.4]">{item.usage}</div>
-                      <div className="flex gap-0.5 mt-1 justify-end">
+                      <div className="flex gap-0.5 mt-1! justify-end">
                         {[...Array(5)].map((_, i) => (
                           <div
                             key={i}

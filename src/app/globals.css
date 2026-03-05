@@ -9,8 +9,8 @@
   --accent3: #ff6b35;
   --text: #e8e8f0;
   --muted: #5a5a7a;
-  --font-sans: "Syne", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
 @theme inline {

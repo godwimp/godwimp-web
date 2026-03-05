@@ -56,7 +56,7 @@ export default function About() {
               </div>
 
               <div>
-                <div className="text-[11px] text-accent2 tracking-widest uppercase mb-2">
+                <div className="text-[11px] mt-3! text-accent2 tracking-widest uppercase mb-2">
                   Work Email
                 </div>
                 <a
@@ -68,7 +68,7 @@ export default function About() {
               </div>
 
               <div className="pt-4 border-t border-border">
-                <div className="text-[11px] text-muted">
+                <div className="text-[11px] mt-1.5! text-muted">
                   Available for freelance projects and full-time opportunities
                 </div>
               </div>

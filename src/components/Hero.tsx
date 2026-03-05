@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <div className="flex justify-center items-center min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,136,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,136,0.03)_1px,transparent_1px)] bg-[length:48px_48px]" />
-      <div className="absolute top-[20%] right-[10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(0,255,136,0.06)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,136,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,136,0.03)_1px,transparent_1px)] bg-size-[48px_48px] pointer-events-none" />
+      <div className="absolute top-[20%] right-[10%] w-150 h-150 bg-[radial-gradient(circle,rgba(0,255,136,0.06)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="relative z-10 w-full">
-        <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '0 48px', paddingTop: '96px' }}>
+        <div style={{ maxWidth: '1600px', margin: '0 auto', padding: '96px 48px 0' }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-sans text-[clamp(52px,7vw,96px)] font-extrabold leading-[0.95] tracking-[-3px] mb-6"
+            className="font-sans text-[clamp(40px,7vw,96px)] font-extrabold leading-[0.95] tracking-[-1px] sm:tracking-[-2px] lg:tracking-[-3px] mb-6"
           >
             Building systems{' '}
             <em className="not-italic text-transparent [-webkit-text-stroke:1px_rgba(0,255,136,0.5)]">
@@ -36,8 +36,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-[15px] text-muted leading-[1.8] mb-10"
-            style={{ maxWidth: '480px' }}
+            className="text-[14px] sm:text-[15px] text-muted leading-[1.8] mt-3! max-w-120"
           >
             I design and build backend infrastructure — microservices, security tools, and npm packages.
             The stuff users never see but always feel.
@@ -47,19 +46,19 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex gap-12"
+            className="flex flex-wrap gap-8 sm:gap-12 mt-10"
           >
             <div>
               <span className="font-sans text-[32px] font-extrabold text-accent block">8+</span>
-              <span className="text-xs text-muted tracking-[0.1em]">Production services</span>
+              <span className="text-xs text-muted tracking-widest">Production services</span>
             </div>
             <div>
               <span className="font-sans text-[32px] font-extrabold text-accent block">99.9%</span>
-              <span className="text-xs text-muted tracking-[0.1em]">Avg uptime</span>
+              <span className="text-xs text-muted tracking-widest">Avg uptime</span>
             </div>
             <div>
               <span className="font-sans text-[32px] font-extrabold text-accent block">~10K</span>
-              <span className="text-xs text-muted tracking-[0.1em]">Daily requests handled</span>
+              <span className="text-xs text-muted tracking-widest">Daily requests handled</span>
             </div>
           </motion.div>
         </div>

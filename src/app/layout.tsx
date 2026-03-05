@@ -1,17 +1,30 @@
 import type { Metadata } from "next";
-import "@fontsource/ibm-plex-mono/400.css";
-import "@fontsource/ibm-plex-mono/500.css";
-import "@fontsource/ibm-plex-mono/600.css";
-import "@fontsource/syne/400.css";
-import "@fontsource/syne/600.css";
-import "@fontsource/syne/700.css";
-import "@fontsource/syne/800.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@fontsource/jetbrains-mono/600.css";
+import "@fontsource/space-grotesk/400.css";
+import "@fontsource/space-grotesk/600.css";
+import "@fontsource/space-grotesk/700.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://godwimp.me'),
   title: "Fadhillah Maulana — Backend and Data Engineer",
   description:
     "Backend engineer specialized in NestJS, microservices, and security tools. Building scalable systems that just work.",
+  keywords: [
+    'backend engineer',
+    'NestJS',
+    'TypeScript',
+    'microservices',
+    'Node.js',
+    'security tools',
+    'npm packages',
+    'Fadhillah Maulana',
+    'godwimp',
+    'portfolio',
+  ],
+  authors: [{ name: 'Fadhillah Maulana', url: 'https://godwimp.me' }],
   openGraph: {
     title: "Fadhillah Maulana — Backend and Data Engineer",
     description:
@@ -21,6 +34,17 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Fadhillah Maulana — Backend and Data Engineer",
+    description:
+      "Backend engineer specialized in NestJS, microservices, and security tools.",
+    creator: '@godwimp',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -29,8 +53,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="font-sans antialiased">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className="font-sans antialiased" suppressHydrationWarning>
         {children}
       </body>
     </html>
