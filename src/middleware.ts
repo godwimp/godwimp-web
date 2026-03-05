@@ -5,7 +5,7 @@ export function middleware(req: NextRequest) {
 
   if (authHeader) {
     const base64 = authHeader.replace('Basic ', '');
-    const decoded = Buffer.from(base64, 'base64').toString('utf-8');
+    const decoded = atob(base64);
     const [user, pass] = decoded.split(':');
 
     const validUser = process.env.ANALYTICS_USER ?? 'admin';
