@@ -3,10 +3,12 @@ import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import ProjectList from "@/components/ProjectList";
 import TechStack from "@/components/TechStack";
+import VisitTracker from "@/components/VisitTracker";
 
 export default function Home() {
   return (
     <div className="w-full min-h-screen overflow-x-hidden">
+      <VisitTracker />
       <Nav />
       <Hero />
       <ProjectList />
