@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import ContactForm from './ContactForm';
 
 export default function About() {
   return (
@@ -43,36 +44,11 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="bg-surface border border-border rounded-xl p-7!"
           >
-            <h3 className="font-sans text-xl font-bold mb-4">Get in Touch</h3>
-            <div className="space-y-4">
-              <div>
-                <div className="text-[11px] text-accent2 tracking-widest uppercase mb-2">Email</div>
-                <a
-                  href="mailto:fadhiel@godwimp.me"
-                  className="text-[14px] text-text hover:text-accent transition-colors"
-                >
-                  fadhiel@godwimp.me
-                </a>
-              </div>
-
-              <div>
-                <div className="text-[11px] mt-3! text-accent2 tracking-widest uppercase mb-2">
-                  Work Email
-                </div>
-                <a
-                  href="mailto:work@godwimp.me"
-                  className="text-[14px] text-text hover:text-accent transition-colors"
-                >
-                  work@godwimp.me
-                </a>
-              </div>
-
-              <div className="pt-4 border-t border-border">
-                <div className="text-[11px] mt-1.5! text-muted">
-                  Available for freelance projects and full-time opportunities
-                </div>
-              </div>
-            </div>
+            <h3 className="font-sans text-xl font-bold mb-2">Get in Touch</h3>
+            <p className="text-[13px] text-muted mb-6 leading-relaxed">
+              Available for freelance &amp; full-time. Reply within 24h.
+            </p>
+            <ContactForm />
           </motion.div>
         </div>
       </div>
