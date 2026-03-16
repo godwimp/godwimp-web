@@ -25,18 +25,18 @@ const stackCategories: StackCategory[] = [
       { icon: '🟨', name: 'JavaScript', note: 'Node.js · Browser', usage: 'APIs & frontends', level: 5 },
       { icon: '🐘', name: 'PHP', note: 'Laravel apps', usage: 'Web applications', level: 4 },
       { icon: '🗃️', name: 'SQL', note: 'PostgreSQL · MySQL · Oracle', usage: 'Complex queries', level: 4 },
-      { icon: '🐍', name: 'Python', note: 'Scripting', usage: 'Automation & tools', level: 3 },
+      { icon: '🐍', name: 'Python', note: 'Scripting', usage: 'Automation & tools', level: 4 },
     ],
   },
   {
     icon: '⚙️',
     name: 'Frameworks & Libraries',
     items: [
-      { icon: '🟥', name: 'NestJS', note: 'Main framework', usage: 'Production services', level: 5 },
-      { icon: '🔺', name: 'Laravel', note: 'PHP framework', usage: 'Full-stack web apps', level: 4 },
-      { icon: '🚀', name: 'Express.js', note: 'REST APIs', usage: 'Lightweight services', level: 4 },
-      { icon: '⚛️', name: 'React.js', note: 'Inertia.js · Next.js', usage: 'Frontend UIs', level: 3 },
+      { icon: '🟥', name: 'NestJS', note: 'Main framework', usage: 'Production - scalable services', level: 5 },
+      { icon: '🔺', name: 'Laravel', note: 'PHP framework', usage: 'Backend services for web apps', level: 5 },
       { icon: '📨', name: 'BullMQ', note: 'Job queues', usage: 'Async processing', level: 4 },
+      { icon: '🚀', name: 'Express.js', note: 'REST APIs', usage: 'Lightweight services', level: 3 },
+      { icon: '⚛️', name: 'React.js', note: 'Inertia.js · Next.js', usage: 'Frontend UIs', level: 2 },
     ],
   },
   {
@@ -45,9 +45,9 @@ const stackCategories: StackCategory[] = [
     items: [
       { icon: '🐘', name: 'PostgreSQL', note: 'PostGIS · Prisma', usage: 'Primary DB · geospatial', level: 5 },
       { icon: '🐬', name: 'MySQL / Oracle', note: 'TypeORM · Sequelize', usage: 'Relational workloads', level: 4 },
-      { icon: '⚡', name: 'Redis', note: 'Cache · pub-sub', usage: 'Sessions & queues', level: 4 },
-      { icon: '🐳', name: 'Docker · VPS', note: 'Containers · Linux', usage: 'Deployments & servers', level: 4 },
-      { icon: '📄', name: 'Git · Swagger', note: 'GitHub · GitLab · OpenAPI', usage: 'VCS & API docs', level: 5 },
+      { icon: '📄', name: 'Git · Swagger', note: 'GitHub · GitLab · OpenAPI', usage: 'VCS & API docs', level: 4 },
+      { icon: '⚡', name: 'Redis', note: 'Cache · pub-sub', usage: 'Sessions & queues', level: 3 },
+      { icon: '🐳', name: 'Docker · VPS', note: 'Containers · Linux', usage: 'Deployments & servers', level: 3 },
     ],
   },
 ];

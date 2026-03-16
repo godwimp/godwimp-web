@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://godwimp.me'),
-  title: "Fadhillah Maulana — Backend and Data Engineer",
+  title: "godwimp",
   description:
     "Backend engineer specialized in NestJS, microservices, and security tools. Building scalable systems that just work.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Fadhillah Maulana', url: 'https://godwimp.me' }],
   openGraph: {
-    title: "Fadhillah Maulana — Backend and Data Engineer",
+    title: "godwimp",
     description:
       "Backend engineer specialized in NestJS, microservices, and security tools.",
     url: "https://godwimp.me",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Fadhillah Maulana — Backend and Data Engineer",
+    title: "godwimp",
     description:
       "Backend engineer specialized in NestJS, microservices, and security tools.",
     creator: '@godwimp',
