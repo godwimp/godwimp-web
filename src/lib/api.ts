@@ -1,3 +1,5 @@
+import { GithubStats } from "@/types";
+
 async function fetchAPI(endpoint: string, options?: RequestInit) {
   const baseURL = process.env.API_URL || "http://localhost:3000";
   const url = `${baseURL}${endpoint}`;
@@ -25,3 +27,9 @@ async function fetchAPI(endpoint: string, options?: RequestInit) {
 }
 
 export default fetchAPI;
+export async function getGithubStats(): Promise<GithubStats> {
+  return fetchAPI('/github', {
+    next: { revalidate: 21600 },
+  } as RequestInit);
+}
+
